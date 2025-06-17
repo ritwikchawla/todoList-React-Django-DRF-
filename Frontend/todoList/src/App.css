@@ -1,0 +1,69 @@
+/* Sticky footer styles */
+.site-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Main content should grow to push footer down */
+main {
+  flex: 1;
+}
+
+/* Footer styles */
+footer {
+  background-color: #f8f9fa;
+  padding: 1rem 0;
+  margin-top: auto; /* This pushes the footer to the bottom */
+}
+
+/* Todo item styles */
+.todo-item {
+  transition: all 0.3s ease;
+}
+
+.todo-item:hover {
+  background-color: #f8f9fa;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #6c757d;
+}
+
+/* Todo Item Styling */
+.todo-item {
+  padding: 1rem 1.25rem;
+  transition: all 0.2s ease;
+  border-left: 0;
+  border-right: 0;
+}
+
+.todo-item:hover {
+  background-color: #f8f9fa;
+}
+
+.todo-title {
+  font-weight: 500;
+  color: #212529;
+}
+
+.todo-description {
+  font-size: 0.875rem;
+}
+
+/* Delete button styling */
+.btn-outline-danger {
+  transition: all 0.2s ease;
+  padding: 0.25rem 0.5rem;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+/* Spacing between items */
+.list-group-item + .list-group-item {
+  border-top-width: 1px;
+}
